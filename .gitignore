@@ -1,0 +1,5 @@
+terraform-provider-ansible
+test.sh
+ansible.tf
+terraform*
+.terraform
