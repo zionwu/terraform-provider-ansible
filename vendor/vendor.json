@@ -1,0 +1,13 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "GYw42Nszv9bUkWqU+NSY3+RcCx8=",
+			"path": "github.com/hashicorp/terraform",
+			"revision": "1babdd4e5ca493bef2e51bfa9b98fa9976306c95",
+			"revisionTime": "2017-06-05T22:18:37Z"
+		}
+	],
+	"rootPath": "github.com/terraform-providers/terraform-provider-ansible"
+}
