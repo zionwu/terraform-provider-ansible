@@ -1,9 +1,9 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 	"os/exec"
+	"path/filepath"
 
 	"github.com/Sirupsen/logrus"
 	"github.com/hashicorp/terraform/helper/schema"
@@ -18,6 +18,10 @@ func resourceAnsibleScript() *schema.Resource {
 
 		Schema: map[string]*schema.Schema{
 			"file": &schema.Schema{
+				Type:     schema.TypeString,
+				Required: true,
+			},
+			"path": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: true,
 			},
@@ -43,22 +47,27 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 	host := d.Get("host").(string)
 	runType := d.Get("type").(string)
 	file := d.Get("file").(string)
+	path := d.Get("path").(string)
 
-	copyStr := fmt.Sprintf("src=%s dest=/tmp/%s", file, file)
+	copyStr := fmt.Sprintf("src=%s dest=%s", file, filepath.Join(path, file))
 	copyCmd := exec.Command("ansible", host, "-u", "root", "-m", "copy", "-a", copyStr)
-	res, err := copyCmd.Output()
+	resCopy, err := copyCmd.Output()
 	if err != nil {
 		logrus.Errorf("error while copy: %s", err)
-		return errors.New(string(res))
+		d.Set("result", string(resCopy))
+		d.SetId("1")
+		return nil
 	}
-	logrus.Infof("script copy result: %s", string(res))
+	logrus.Infof("script copy result: %s", string(resCopy))
 
-	runStr := fmt.Sprintf("%s /tmp/%s", runType, file)
+	runStr := fmt.Sprintf("%s %s", runType, filepath.Join(path, file))
 	runCmd := exec.Command("ansible", host, "-u", "root", "-a", runStr)
-	res, err = runCmd.Output()
+	res, err := runCmd.Output()
 	if err != nil {
 		logrus.Errorf("error while execute: %s", err)
-		return errors.New(string(res))
+		d.Set("result", string(res))
+		d.SetId("1")
+		return nil
 	}
 	logrus.Infof("script run result: %s", string(res))
 	d.Set("result", string(res))
