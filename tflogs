@@ -1,0 +1,2078 @@
+2017/08/16 16:00:44 [INFO] Terraform version: 0.10.0  2041053ee9444fa8175a298093b55a89586a1823
+2017/08/16 16:00:44 [INFO] Go runtime version: go1.8
+2017/08/16 16:00:44 [INFO] CLI args: []string{"/usr/local/bin/terraform", "init"}
+2017/08/16 16:00:44 [DEBUG] Attempting to open CLI config file: /Users/wuziyang/.terraformrc
+2017/08/16 16:00:44 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2017/08/16 16:00:44 [INFO] CLI command args: []string{"init"}
+2017/08/16 16:00:44 [DEBUG] command: loading backend config file: /Users/wuziyang/Rancher/code/gopath/src/github.com/terraform-providers/terraform-provider-ansible
+2017/08/16 16:00:44 [INFO] command: empty terraform config, returning nil
+2017/08/16 16:00:44 [DEBUG] command: no data state file found for backend config
+2017/08/16 16:00:44 [DEBUG] New state was assigned lineage "e27b696b-1e6b-49e6-841a-308112443b81"
+2017/08/16 16:00:44 [INFO] command: backend initialized: <nil>
+2017/08/16 16:00:44 [DEBUG] checking for provider in "."
+2017/08/16 16:00:44 [DEBUG] skipping ".git", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping ".gitignore", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping ".terraform", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "README.md", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible.tf", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "main.go", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "provider.go", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "resource_ansible_script.go", not a provider
+2017/08/16 16:00:44 [WARNING] found legacy provider "terraform-provider-ansible"
+2017/08/16 16:00:44 [DEBUG] skipping "test.sh", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "tflogs", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "vendor", not a provider
+2017/08/16 16:00:44 [DEBUG] checking for provider in "/usr/local/bin"
+2017/08/16 16:00:44 [DEBUG] skipping "2to3", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "2to3-3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxAutostart", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxBalloonCtrl", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxBugReport", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxDTrace", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxHeadless", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxManage", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxVRDP", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VirtualBox", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-connection", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-console", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-doc", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-galaxy", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-playbook", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-pull", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-vault", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "brew", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "capinfos", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ccmake", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "cmake", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "cmakexbuild", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "cpack", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ctags", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ctest", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "dapper", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "dftest", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "docker", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "docker-compose", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "docker-credential-osxkeychain", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "docker-machine", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "dumpcap", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "easy_install-3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "editcap", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "hyperkit", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "idea", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "idle3", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "idle3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "innochecksum", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ip", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "kubectl", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "lz4_decompress", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mergecap", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "minikube", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "my_print_defaults", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "myisam_ftdump", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "myisamchk", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "myisamlog", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "myisampack", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql.server", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_client_test", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_client_test_embedded", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_config", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_config_editor", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_embedded", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_install_db", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_plugin", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_secure_installation", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_ssl_rsa_setup", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_tzinfo_to_sql", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_upgrade", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqladmin", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlbinlog", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlcheck", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqld", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqld_multi", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqld_safe", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqldump", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqldumpslow", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlimport", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlpump", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlshow", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlslap", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqltest", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqltest_embedded", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlxtest", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "nginx", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "notary", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pbr", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pcre-config", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pcregrep", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pcretest", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "perror", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pip", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pip2", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pip2.7", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pip3", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pip3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "polipo", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "proxychains4", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pydoc3", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pydoc3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3-32", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3-config", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6-32", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6-config", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6m", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6m-config", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pyvenv", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pyvenv-3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "randpkt", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "rawshark", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "replace", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "resolve_stack_dump", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "resolveip", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "terraform", not a provider
+2017/08/16 16:00:44 [WARNING] found legacy provider "terraform-provider-ansible"
+2017/08/16 16:00:44 [DEBUG] skipping "text2pcap", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "tox", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "tox-quickstart", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "trash", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "tshark", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "vagrant", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "vbox-img", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "vboxwebsrv", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "virtualenv", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "vpnkit", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "wget", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "wheel", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "wireshark", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "zlib_decompress", not a provider
+2017/08/16 16:00:44 [DEBUG] checking for provider in ".terraform/plugins/darwin_amd64"
+2017/08/16 16:00:44 [DEBUG] skipping "lock.json", not a provider
+2017/08/16 16:00:44 [DEBUG] checking for provider in "/Users/wuziyang/.terraform.d/plugins"
+2017/08/16 16:00:44 [DEBUG] found valid plugin: "ansible"
+2017/08/16 16:00:44 [DEBUG] checking for provisioner in "."
+2017/08/16 16:00:44 [DEBUG] skipping ".git", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping ".gitignore", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping ".terraform", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "README.md", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "ansible.tf", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "main.go", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "provider.go", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "resource_ansible_script.go", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "terraform-provider-ansible", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "test.sh", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "tflogs", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "vendor", not a provisioner
+2017/08/16 16:00:44 [DEBUG] checking for provisioner in "/usr/local/bin"
+2017/08/16 16:00:44 [DEBUG] skipping "2to3", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "2to3-3.6", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxAutostart", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxBalloonCtrl", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxBugReport", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxDTrace", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxHeadless", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxManage", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxVRDP", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "VirtualBox", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "ansible", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-connection", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-console", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-doc", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-galaxy", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-playbook", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-pull", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-vault", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "brew", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "capinfos", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "ccmake", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "cmake", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "cmakexbuild", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "cpack", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "ctags", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "ctest", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "dapper", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "dftest", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "docker", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "docker-compose", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "docker-credential-osxkeychain", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "docker-machine", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "dumpcap", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "easy_install-3.6", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "editcap", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "hyperkit", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "idea", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "idle3", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "idle3.6", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "innochecksum", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "ip", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "kubectl", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "lz4_decompress", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mergecap", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "minikube", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "my_print_defaults", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "myisam_ftdump", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "myisamchk", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "myisamlog", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "myisampack", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysql", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysql.server", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_client_test", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_client_test_embedded", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_config", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_config_editor", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_embedded", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_install_db", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_plugin", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_secure_installation", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_ssl_rsa_setup", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_tzinfo_to_sql", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_upgrade", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysqladmin", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlbinlog", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlcheck", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysqld", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysqld_multi", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysqld_safe", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysqldump", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysqldumpslow", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlimport", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlpump", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlshow", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlslap", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysqltest", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysqltest_embedded", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlxtest", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "nginx", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "notary", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "pbr", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "pcre-config", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "pcregrep", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "pcretest", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "perror", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "pip", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "pip2", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "pip2.7", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "pip3", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "pip3.6", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "polipo", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "proxychains4", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "pydoc3", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "pydoc3.6", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "python3", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "python3-32", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "python3-config", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6-32", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6-config", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6m", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6m-config", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "pyvenv", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "pyvenv-3.6", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "randpkt", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "rawshark", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "replace", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "resolve_stack_dump", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "resolveip", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "terraform", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "terraform-provider-ansible", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "text2pcap", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "tox", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "tox-quickstart", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "trash", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "tshark", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "vagrant", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "vbox-img", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "vboxwebsrv", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "virtualenv", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "vpnkit", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "wget", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "wheel", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "wireshark", not a provisioner
+2017/08/16 16:00:44 [DEBUG] skipping "zlib_decompress", not a provisioner
+2017/08/16 16:00:44 [DEBUG] checking for provisioner in ".terraform/plugins/darwin_amd64"
+2017/08/16 16:00:44 [DEBUG] skipping "lock.json", not a provisioner
+2017/08/16 16:00:44 [DEBUG] checking for provisioner in "/Users/wuziyang/.terraform.d/plugins"
+2017/08/16 16:00:44 [INFO] command: backend <nil> is not enhanced, wrapping in local
+2017/08/16 16:00:44 [DEBUG] checking for provider in "."
+2017/08/16 16:00:44 [DEBUG] skipping ".git", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping ".gitignore", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping ".terraform", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "README.md", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible.tf", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "main.go", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "provider.go", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "resource_ansible_script.go", not a provider
+2017/08/16 16:00:44 [WARNING] found legacy provider "terraform-provider-ansible"
+2017/08/16 16:00:44 [DEBUG] skipping "test.sh", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "tflogs", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "vendor", not a provider
+2017/08/16 16:00:44 [DEBUG] checking for provider in "/usr/local/bin"
+2017/08/16 16:00:44 [DEBUG] skipping "2to3", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "2to3-3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxAutostart", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxBalloonCtrl", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxBugReport", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxDTrace", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxHeadless", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxManage", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxVRDP", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VirtualBox", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-connection", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-console", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-doc", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-galaxy", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-playbook", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-pull", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-vault", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "brew", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "capinfos", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ccmake", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "cmake", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "cmakexbuild", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "cpack", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ctags", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ctest", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "dapper", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "dftest", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "docker", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "docker-compose", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "docker-credential-osxkeychain", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "docker-machine", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "dumpcap", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "easy_install-3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "editcap", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "hyperkit", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "idea", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "idle3", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "idle3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "innochecksum", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ip", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "kubectl", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "lz4_decompress", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mergecap", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "minikube", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "my_print_defaults", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "myisam_ftdump", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "myisamchk", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "myisamlog", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "myisampack", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql.server", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_client_test", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_client_test_embedded", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_config", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_config_editor", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_embedded", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_install_db", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_plugin", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_secure_installation", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_ssl_rsa_setup", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_tzinfo_to_sql", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_upgrade", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqladmin", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlbinlog", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlcheck", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqld", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqld_multi", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqld_safe", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqldump", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqldumpslow", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlimport", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlpump", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlshow", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlslap", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqltest", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqltest_embedded", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlxtest", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "nginx", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "notary", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pbr", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pcre-config", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pcregrep", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pcretest", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "perror", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pip", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pip2", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pip2.7", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pip3", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pip3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "polipo", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "proxychains4", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pydoc3", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pydoc3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3-32", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3-config", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6-32", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6-config", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6m", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6m-config", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pyvenv", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pyvenv-3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "randpkt", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "rawshark", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "replace", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "resolve_stack_dump", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "resolveip", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "terraform", not a provider
+2017/08/16 16:00:44 [WARNING] found legacy provider "terraform-provider-ansible"
+2017/08/16 16:00:44 [DEBUG] skipping "text2pcap", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "tox", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "tox-quickstart", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "trash", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "tshark", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "vagrant", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "vbox-img", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "vboxwebsrv", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "virtualenv", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "vpnkit", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "wget", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "wheel", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "wireshark", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "zlib_decompress", not a provider
+2017/08/16 16:00:44 [DEBUG] checking for provider in ".terraform/plugins/darwin_amd64"
+2017/08/16 16:00:44 [DEBUG] skipping "lock.json", not a provider
+2017/08/16 16:00:44 [DEBUG] checking for provider in "/Users/wuziyang/.terraform.d/plugins"
+2017/08/16 16:00:44 [DEBUG] found valid plugin: "ansible"
+2017/08/16 16:00:44 [DEBUG] plugin requirements: "ansible"=""
+2017/08/16 16:00:44 [DEBUG] checking for provider in "."
+2017/08/16 16:00:44 [DEBUG] skipping ".git", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping ".gitignore", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping ".terraform", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "README.md", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible.tf", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "main.go", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "provider.go", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "resource_ansible_script.go", not a provider
+2017/08/16 16:00:44 [WARNING] found legacy provider "terraform-provider-ansible"
+2017/08/16 16:00:44 [DEBUG] skipping "test.sh", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "tflogs", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "vendor", not a provider
+2017/08/16 16:00:44 [DEBUG] checking for provider in "/usr/local/bin"
+2017/08/16 16:00:44 [DEBUG] skipping "2to3", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "2to3-3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxAutostart", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxBalloonCtrl", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxBugReport", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxDTrace", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxHeadless", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxManage", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VBoxVRDP", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "VirtualBox", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-connection", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-console", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-doc", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-galaxy", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-playbook", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-pull", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ansible-vault", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "brew", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "capinfos", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ccmake", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "cmake", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "cmakexbuild", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "cpack", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ctags", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ctest", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "dapper", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "dftest", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "docker", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "docker-compose", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "docker-credential-osxkeychain", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "docker-machine", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "dumpcap", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "easy_install-3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "editcap", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "hyperkit", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "idea", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "idle3", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "idle3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "innochecksum", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "ip", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "kubectl", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "lz4_decompress", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mergecap", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "minikube", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "my_print_defaults", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "myisam_ftdump", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "myisamchk", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "myisamlog", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "myisampack", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql.server", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_client_test", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_client_test_embedded", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_config", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_config_editor", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_embedded", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_install_db", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_plugin", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_secure_installation", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_ssl_rsa_setup", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_tzinfo_to_sql", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysql_upgrade", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqladmin", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlbinlog", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlcheck", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqld", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqld_multi", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqld_safe", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqldump", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqldumpslow", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlimport", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlpump", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlshow", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlslap", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqltest", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqltest_embedded", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "mysqlxtest", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "nginx", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "notary", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pbr", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pcre-config", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pcregrep", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pcretest", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "perror", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pip", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pip2", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pip2.7", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pip3", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pip3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "polipo", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "proxychains4", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pydoc3", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pydoc3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3-32", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3-config", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6-32", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6-config", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6m", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "python3.6m-config", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pyvenv", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "pyvenv-3.6", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "randpkt", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "rawshark", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "replace", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "resolve_stack_dump", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "resolveip", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "terraform", not a provider
+2017/08/16 16:00:44 [WARNING] found legacy provider "terraform-provider-ansible"
+2017/08/16 16:00:44 [DEBUG] skipping "text2pcap", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "tox", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "tox-quickstart", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "trash", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "tshark", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "vagrant", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "vbox-img", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "vboxwebsrv", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "virtualenv", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "vpnkit", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "wget", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "wheel", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "wireshark", not a provider
+2017/08/16 16:00:44 [DEBUG] skipping "zlib_decompress", not a provider
+2017/08/16 16:00:44 [DEBUG] checking for provider in ".terraform/plugins/darwin_amd64"
+2017/08/16 16:00:44 [DEBUG] skipping "lock.json", not a provider
+2017/08/16 16:00:44 [DEBUG] checking for provider in "/Users/wuziyang/.terraform.d/plugins"
+2017/08/16 16:00:44 [DEBUG] found valid plugin: "ansible"
+2017/08/16 16:00:44 [DEBUG] checking for provider in ".terraform/plugins/darwin_amd64"
+2017/08/16 16:00:44 [DEBUG] skipping "lock.json", not a provider
+2017/08/16 16:00:44 [DEBUG] plugin: waiting for all plugin processes to complete...
+2017/08/16 16:00:46 [INFO] Terraform version: 0.10.0  2041053ee9444fa8175a298093b55a89586a1823
+2017/08/16 16:00:46 [INFO] Go runtime version: go1.8
+2017/08/16 16:00:46 [INFO] CLI args: []string{"/usr/local/bin/terraform", "apply"}
+2017/08/16 16:00:46 [DEBUG] Attempting to open CLI config file: /Users/wuziyang/.terraformrc
+2017/08/16 16:00:46 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2017/08/16 16:00:46 [INFO] CLI command args: []string{"apply"}
+2017/08/16 16:00:46 [INFO] command: empty terraform config, returning nil
+2017/08/16 16:00:46 [DEBUG] command: no data state file found for backend config
+2017/08/16 16:00:46 [DEBUG] New state was assigned lineage "3d5f0aaa-cb53-4041-9798-a10d76cb4ba1"
+2017/08/16 16:00:46 [INFO] command: backend initialized: <nil>
+2017/08/16 16:00:46 [DEBUG] checking for provider in "."
+2017/08/16 16:00:46 [DEBUG] skipping ".git", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping ".gitignore", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping ".terraform", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "README.md", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "ansible.tf", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "main.go", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "provider.go", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "resource_ansible_script.go", not a provider
+2017/08/16 16:00:46 [WARNING] found legacy provider "terraform-provider-ansible"
+2017/08/16 16:00:46 [DEBUG] skipping "test.sh", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "tflogs", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "vendor", not a provider
+2017/08/16 16:00:46 [DEBUG] checking for provider in "/usr/local/bin"
+2017/08/16 16:00:46 [DEBUG] skipping "2to3", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "2to3-3.6", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "VBoxAutostart", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "VBoxBalloonCtrl", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "VBoxBugReport", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "VBoxDTrace", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "VBoxHeadless", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "VBoxManage", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "VBoxVRDP", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "VirtualBox", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "ansible", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "ansible-connection", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "ansible-console", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "ansible-doc", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "ansible-galaxy", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "ansible-playbook", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "ansible-pull", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "ansible-vault", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "brew", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "capinfos", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "ccmake", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "cmake", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "cmakexbuild", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "cpack", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "ctags", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "ctest", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "dapper", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "dftest", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "docker", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "docker-compose", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "docker-credential-osxkeychain", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "docker-machine", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "dumpcap", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "easy_install-3.6", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "editcap", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "hyperkit", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "idea", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "idle3", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "idle3.6", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "innochecksum", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "ip", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "kubectl", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "lz4_decompress", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mergecap", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "minikube", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "my_print_defaults", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "myisam_ftdump", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "myisamchk", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "myisamlog", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "myisampack", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysql", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysql.server", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_client_test", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_client_test_embedded", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_config", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_config_editor", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_embedded", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_install_db", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_plugin", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_secure_installation", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_ssl_rsa_setup", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_tzinfo_to_sql", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_upgrade", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysqladmin", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysqlbinlog", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysqlcheck", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysqld", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysqld_multi", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysqld_safe", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysqldump", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysqldumpslow", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysqlimport", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysqlpump", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysqlshow", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysqlslap", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysqltest", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysqltest_embedded", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "mysqlxtest", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "nginx", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "notary", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "pbr", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "pcre-config", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "pcregrep", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "pcretest", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "perror", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "pip", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "pip2", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "pip2.7", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "pip3", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "pip3.6", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "polipo", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "proxychains4", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "pydoc3", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "pydoc3.6", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "python3", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "python3-32", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "python3-config", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "python3.6", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "python3.6-32", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "python3.6-config", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "python3.6m", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "python3.6m-config", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "pyvenv", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "pyvenv-3.6", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "randpkt", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "rawshark", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "replace", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "resolve_stack_dump", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "resolveip", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "terraform", not a provider
+2017/08/16 16:00:46 [WARNING] found legacy provider "terraform-provider-ansible"
+2017/08/16 16:00:46 [DEBUG] skipping "text2pcap", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "tox", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "tox-quickstart", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "trash", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "tshark", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "vagrant", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "vbox-img", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "vboxwebsrv", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "virtualenv", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "vpnkit", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "wget", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "wheel", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "wireshark", not a provider
+2017/08/16 16:00:46 [DEBUG] skipping "zlib_decompress", not a provider
+2017/08/16 16:00:46 [DEBUG] checking for provider in ".terraform/plugins/darwin_amd64"
+2017/08/16 16:00:46 [DEBUG] skipping "lock.json", not a provider
+2017/08/16 16:00:46 [DEBUG] checking for provider in "/Users/wuziyang/.terraform.d/plugins"
+2017/08/16 16:00:46 [DEBUG] found valid plugin: "ansible"
+2017/08/16 16:00:46 [DEBUG] checking for provisioner in "."
+2017/08/16 16:00:46 [DEBUG] skipping ".git", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping ".gitignore", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping ".terraform", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "README.md", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "ansible.tf", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "main.go", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "provider.go", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "resource_ansible_script.go", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "terraform-provider-ansible", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "test.sh", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "tflogs", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "vendor", not a provisioner
+2017/08/16 16:00:46 [DEBUG] checking for provisioner in "/usr/local/bin"
+2017/08/16 16:00:46 [DEBUG] skipping "2to3", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "2to3-3.6", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "VBoxAutostart", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "VBoxBalloonCtrl", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "VBoxBugReport", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "VBoxDTrace", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "VBoxHeadless", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "VBoxManage", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "VBoxVRDP", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "VirtualBox", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "ansible", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "ansible-connection", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "ansible-console", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "ansible-doc", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "ansible-galaxy", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "ansible-playbook", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "ansible-pull", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "ansible-vault", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "brew", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "capinfos", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "ccmake", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "cmake", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "cmakexbuild", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "cpack", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "ctags", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "ctest", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "dapper", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "dftest", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "docker", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "docker-compose", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "docker-credential-osxkeychain", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "docker-machine", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "dumpcap", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "easy_install-3.6", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "editcap", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "hyperkit", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "idea", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "idle3", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "idle3.6", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "innochecksum", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "ip", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "kubectl", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "lz4_decompress", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mergecap", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "minikube", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "my_print_defaults", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "myisam_ftdump", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "myisamchk", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "myisamlog", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "myisampack", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysql", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysql.server", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_client_test", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_client_test_embedded", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_config", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_config_editor", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_embedded", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_install_db", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_plugin", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_secure_installation", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_ssl_rsa_setup", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_tzinfo_to_sql", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysql_upgrade", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysqladmin", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysqlbinlog", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysqlcheck", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysqld", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysqld_multi", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysqld_safe", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysqldump", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysqldumpslow", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysqlimport", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysqlpump", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysqlshow", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysqlslap", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysqltest", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysqltest_embedded", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "mysqlxtest", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "nginx", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "notary", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "pbr", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "pcre-config", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "pcregrep", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "pcretest", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "perror", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "pip", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "pip2", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "pip2.7", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "pip3", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "pip3.6", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "polipo", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "proxychains4", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "pydoc3", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "pydoc3.6", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "python3", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "python3-32", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "python3-config", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "python3.6", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "python3.6-32", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "python3.6-config", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "python3.6m", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "python3.6m-config", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "pyvenv", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "pyvenv-3.6", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "randpkt", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "rawshark", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "replace", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "resolve_stack_dump", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "resolveip", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "terraform", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "terraform-provider-ansible", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "text2pcap", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "tox", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "tox-quickstart", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "trash", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "tshark", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "vagrant", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "vbox-img", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "vboxwebsrv", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "virtualenv", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "vpnkit", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "wget", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "wheel", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "wireshark", not a provisioner
+2017/08/16 16:00:46 [DEBUG] skipping "zlib_decompress", not a provisioner
+2017/08/16 16:00:46 [DEBUG] checking for provisioner in ".terraform/plugins/darwin_amd64"
+2017/08/16 16:00:46 [DEBUG] skipping "lock.json", not a provisioner
+2017/08/16 16:00:46 [DEBUG] checking for provisioner in "/Users/wuziyang/.terraform.d/plugins"
+2017/08/16 16:00:46 [INFO] command: backend <nil> is not enhanced, wrapping in local
+2017/08/16 16:00:46 [INFO] backend/local: starting Apply operation
+2017/08/16 16:00:46 [DEBUG] New state was assigned lineage "f1674e60-e143-4c69-a7f2-d34ee72e27e6"
+2017/08/16 16:00:46 [INFO] terraform: building graph: GraphTypeInput
+2017/08/16 16:00:47 [TRACE] ConfigTransformer: Starting for path: []
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.OutputTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.OrphanResourceTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+2017/08/16 16:00:47 [TRACE] AttachResourceConfigTransformer: Beginning...
+2017/08/16 16:00:47 [TRACE] AttachResourceConfigTransformer: Attach resource config request: ansible_script.test
+2017/08/16 16:00:47 [TRACE] Attaching resource config: &config.Resource{Mode:0, Name:"test", Type:"ansible_script", RawCount:(*config.RawConfig)(0xc420207bc0), RawConfig:(*config.RawConfig)(0xc420207740), Provisioners:[]*config.Provisioner(nil), Provider:"", DependsOn:[]string(nil), Lifecycle:config.ResourceLifecycle{CreateBeforeDestroy:false, PreventDestroy:false, IgnoreChanges:[]string(nil)}}
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachResourceConfigTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+2017/08/16 16:00:47 [DEBUG] Resource state not found for "ansible_script.test": ansible_script.test
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachStateTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.RootVariableTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ParentProviderTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Attach provider request: []string{} ansible
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachProviderConfigTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ModuleVariableTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [DEBUG] ReferenceTransformer: "ansible_script.test" references: []
+2017/08/16 16:00:47 [DEBUG] ReferenceTransformer: "provider.ansible" references: []
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ReferenceTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.CountBoundaryTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.CloseProviderTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible (close) - *terraform.graphNodeCloseProvider
+  ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.CloseProvisionerTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible (close) - *terraform.graphNodeCloseProvider
+  ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.RootTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible (close) - *terraform.graphNodeCloseProvider
+  ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+root - terraform.graphNodeRoot
+  meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  provider.ansible (close) - *terraform.graphNodeCloseProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+ansible_script.test - *terraform.NodeAbstractResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeAbstractResource
+provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible (close) - *terraform.graphNodeCloseProvider
+  ansible_script.test - *terraform.NodeAbstractResource
+root - terraform.graphNodeRoot
+  meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  provider.ansible (close) - *terraform.graphNodeCloseProvider
+2017/08/16 16:00:47 [DEBUG] Starting graph walk: walkInput
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "provider.ansible"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "meta.count-boundary (count boundary fixup)"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "provider.ansible (close)"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "root"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "provider.ansible (close)" waiting on "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "root" waiting on "provider.ansible (close)"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "root" waiting on "meta.count-boundary (count boundary fixup)"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "ansible_script.test" waiting on "provider.ansible"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "meta.count-boundary (count boundary fixup)" waiting on "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] dag/walk: dependencies changed for "root", sending new deps
+2017/08/16 16:00:47 [DEBUG] dag/walk: dependencies changed for "ansible_script.test", sending new deps
+2017/08/16 16:00:47 [DEBUG] dag/walk: dependencies changed for "meta.count-boundary (count boundary fixup)", sending new deps
+2017/08/16 16:00:47 [DEBUG] dag/walk: dependencies changed for "provider.ansible (close)", sending new deps
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "provider.ansible"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.provider.ansible': walking
+2017/08/16 16:00:47 [DEBUG] vertex 'root.provider.ansible': evaluating
+2017/08/16 16:00:47 [TRACE] [walkInput] Entering eval tree: provider.ansible
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSequence
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalInitProvider
+2017/08/16 16:00:47 [DEBUG] plugin: starting plugin: /Users/wuziyang/Rancher/code/gopath/src/github.com/terraform-providers/terraform-provider-ansible/terraform-provider-ansible []string{"/Users/wuziyang/Rancher/code/gopath/src/github.com/terraform-providers/terraform-provider-ansible/terraform-provider-ansible"}
+2017/08/16 16:00:47 [DEBUG] plugin: waiting for RPC address for: /Users/wuziyang/Rancher/code/gopath/src/github.com/terraform-providers/terraform-provider-ansible/terraform-provider-ansible
+2017/08/16 16:00:47 [DEBUG] plugin: terraform-provider-ansible: 2017/08/16 16:00:47 [DEBUG] plugin: plugin address: unix /var/folders/0f/gprnwh817m19crlt8q5cywpr0000gn/T/plugin509824566
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalOpFilter
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSequence
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalGetProvider
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalInterpolate
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalBuildProviderConfig
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalInputProvider
+2017/08/16 16:00:47 [DEBUG] root: eval: terraform.EvalNoop
+2017/08/16 16:00:47 [DEBUG] root: eval: terraform.EvalNoop
+2017/08/16 16:00:47 [DEBUG] root: eval: terraform.EvalNoop
+2017/08/16 16:00:47 [TRACE] [walkInput] Exiting eval tree: provider.ansible
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.ansible_script.test': walking
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "meta.count-boundary (count boundary fixup)"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.meta.count-boundary (count boundary fixup)': walking
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "provider.ansible (close)"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.meta.count-boundary (count boundary fixup)': evaluating
+2017/08/16 16:00:47 [DEBUG] vertex 'root.provider.ansible (close)': walking
+2017/08/16 16:00:47 [TRACE] [walkInput] Entering eval tree: meta.count-boundary (count boundary fixup)
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundaryGlobal
+2017/08/16 16:00:47 [TRACE] [walkInput] Exiting eval tree: meta.count-boundary (count boundary fixup)
+2017/08/16 16:00:47 [DEBUG] vertex 'root.provider.ansible (close)': evaluating
+2017/08/16 16:00:47 [TRACE] [walkInput] Entering eval tree: provider.ansible (close)
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalCloseProvider
+2017/08/16 16:00:47 [TRACE] [walkInput] Exiting eval tree: provider.ansible (close)
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "root"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.root': walking
+2017/08/16 16:00:47 [INFO] terraform: building graph: GraphTypeValidate
+2017/08/16 16:00:47 [TRACE] ConfigTransformer: Starting for path: []
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.OutputTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.OrphanResourceTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+2017/08/16 16:00:47 [TRACE] AttachResourceConfigTransformer: Beginning...
+2017/08/16 16:00:47 [TRACE] AttachResourceConfigTransformer: Attach resource config request: ansible_script.test
+2017/08/16 16:00:47 [TRACE] Attaching resource config: &config.Resource{Mode:0, Name:"test", Type:"ansible_script", RawCount:(*config.RawConfig)(0xc420207bc0), RawConfig:(*config.RawConfig)(0xc420207740), Provisioners:[]*config.Provisioner(nil), Provider:"", DependsOn:[]string(nil), Lifecycle:config.ResourceLifecycle{CreateBeforeDestroy:false, PreventDestroy:false, IgnoreChanges:[]string(nil)}}
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachResourceConfigTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+2017/08/16 16:00:47 [DEBUG] Resource state not found for "ansible_script.test": ansible_script.test
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachStateTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.RootVariableTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ParentProviderTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Attach provider request: []string{} ansible
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachProviderConfigTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.graphTransformerMulti:
+
+ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ModuleVariableTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [DEBUG] ReferenceTransformer: "ansible_script.test" references: []
+2017/08/16 16:00:47 [DEBUG] ReferenceTransformer: "provider.ansible" references: []
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ReferenceTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.CountBoundaryTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.CloseProviderTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible (close) - *terraform.graphNodeCloseProvider
+  ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.CloseProvisionerTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible (close) - *terraform.graphNodeCloseProvider
+  ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.RootTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible (close) - *terraform.graphNodeCloseProvider
+  ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+root - terraform.graphNodeRoot
+  meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  provider.ansible (close) - *terraform.graphNodeCloseProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeValidatableResource
+provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible (close) - *terraform.graphNodeCloseProvider
+  ansible_script.test - *terraform.NodeValidatableResource
+root - terraform.graphNodeRoot
+  meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  provider.ansible (close) - *terraform.graphNodeCloseProvider
+2017/08/16 16:00:47 [DEBUG] Starting graph walk: walkValidate
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "meta.count-boundary (count boundary fixup)"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "provider.ansible (close)"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "root"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "provider.ansible"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "root" waiting on "provider.ansible (close)"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "ansible_script.test" waiting on "provider.ansible"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "meta.count-boundary (count boundary fixup)" waiting on "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "provider.ansible (close)" waiting on "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "root" waiting on "meta.count-boundary (count boundary fixup)"
+2017/08/16 16:00:47 [DEBUG] dag/walk: dependencies changed for "ansible_script.test", sending new deps
+2017/08/16 16:00:47 [DEBUG] dag/walk: dependencies changed for "meta.count-boundary (count boundary fixup)", sending new deps
+2017/08/16 16:00:47 [DEBUG] dag/walk: dependencies changed for "provider.ansible (close)", sending new deps
+2017/08/16 16:00:47 [DEBUG] dag/walk: dependencies changed for "root", sending new deps
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "provider.ansible"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.provider.ansible': walking
+2017/08/16 16:00:47 [DEBUG] vertex 'root.provider.ansible': evaluating
+2017/08/16 16:00:47 [TRACE] [walkValidate] Entering eval tree: provider.ansible
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSequence
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalInitProvider
+2017/08/16 16:00:47 [DEBUG] root: eval: terraform.EvalNoop
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalOpFilter
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSequence
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalGetProvider
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalInterpolate
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalBuildProviderConfig
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalValidateProvider
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSetProviderConfig
+2017/08/16 16:00:47 [DEBUG] root: eval: terraform.EvalNoop
+2017/08/16 16:00:47 [DEBUG] root: eval: terraform.EvalNoop
+2017/08/16 16:00:47 [TRACE] [walkValidate] Exiting eval tree: provider.ansible
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.ansible_script.test': walking
+2017/08/16 16:00:47 [DEBUG] vertex 'root.ansible_script.test': evaluating
+2017/08/16 16:00:47 [TRACE] [walkValidate] Entering eval tree: ansible_script.test
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSequence
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalInterpolate
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalIf
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalValidateCount
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2017/08/16 16:00:47 [TRACE] [walkValidate] Exiting eval tree: ansible_script.test
+2017/08/16 16:00:47 [DEBUG] vertex 'root.ansible_script.test': expanding/walking dynamic subgraph
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResourceInstance
+2017/08/16 16:00:47 [DEBUG] Resource state not found for "ansible_script.test": ansible_script.test
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachStateTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResourceInstance
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResourceInstance
+2017/08/16 16:00:47 [DEBUG] ReferenceTransformer: "ansible_script.test" references: []
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ReferenceTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResourceInstance
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.RootTransformer:
+
+ansible_script.test - *terraform.NodeValidatableResourceInstance
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.ansible_script.test': walking
+2017/08/16 16:00:47 [DEBUG] vertex 'root.ansible_script.test': evaluating
+2017/08/16 16:00:47 [TRACE] [walkValidate] Entering eval tree: ansible_script.test
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSequence
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalValidateResourceSelfRef
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalGetProvider
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalInterpolate
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalValidateResource
+2017/08/16 16:00:47 [TRACE] [walkValidate] Exiting eval tree: ansible_script.test
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "meta.count-boundary (count boundary fixup)"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.meta.count-boundary (count boundary fixup)': walking
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "provider.ansible (close)"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.provider.ansible (close)': walking
+2017/08/16 16:00:47 [DEBUG] vertex 'root.meta.count-boundary (count boundary fixup)': evaluating
+2017/08/16 16:00:47 [TRACE] [walkValidate] Entering eval tree: meta.count-boundary (count boundary fixup)
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundaryGlobal
+2017/08/16 16:00:47 [TRACE] [walkValidate] Exiting eval tree: meta.count-boundary (count boundary fixup)
+2017/08/16 16:00:47 [DEBUG] vertex 'root.provider.ansible (close)': evaluating
+2017/08/16 16:00:47 [TRACE] [walkValidate] Entering eval tree: provider.ansible (close)
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalCloseProvider
+2017/08/16 16:00:47 [TRACE] [walkValidate] Exiting eval tree: provider.ansible (close)
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "root"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.root': walking
+2017/08/16 16:00:47 [INFO] backend/local: apply calling Refresh
+2017/08/16 16:00:47 [INFO] terraform: building graph: GraphTypeRefresh
+2017/08/16 16:00:47 [TRACE] No managed resources in state during refresh, skipping managed resource transformer
+2017/08/16 16:00:47 [TRACE] ConfigTransformer: Starting for path: []
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.OrphanResourceTransformer:
+
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachStateTransformer:
+
+2017/08/16 16:00:47 [TRACE] AttachResourceConfigTransformer: Beginning...
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachResourceConfigTransformer:
+
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.RootVariableTransformer:
+
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ParentProviderTransformer:
+
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachProviderConfigTransformer:
+
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.OutputTransformer:
+
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ModuleVariableTransformer:
+
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ReferenceTransformer:
+
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.CloseProviderTransformer:
+
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.RootTransformer:
+
+root - terraform.graphNodeRoot
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+root - terraform.graphNodeRoot
+2017/08/16 16:00:47 [DEBUG] Starting graph walk: walkRefresh
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "root"
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "root"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.root': walking
+2017/08/16 16:00:47 [INFO] backend/local: apply calling Plan
+2017/08/16 16:00:47 [INFO] terraform: building graph: GraphTypePlan
+2017/08/16 16:00:47 [TRACE] ConfigTransformer: Starting for path: []
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.OutputTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.OrphanResourceTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+2017/08/16 16:00:47 [TRACE] AttachResourceConfigTransformer: Beginning...
+2017/08/16 16:00:47 [TRACE] AttachResourceConfigTransformer: Attach resource config request: ansible_script.test
+2017/08/16 16:00:47 [TRACE] Attaching resource config: &config.Resource{Mode:0, Name:"test", Type:"ansible_script", RawCount:(*config.RawConfig)(0xc420207bc0), RawConfig:(*config.RawConfig)(0xc420207740), Provisioners:[]*config.Provisioner(nil), Provider:"", DependsOn:[]string(nil), Lifecycle:config.ResourceLifecycle{CreateBeforeDestroy:false, PreventDestroy:false, IgnoreChanges:[]string(nil)}}
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachResourceConfigTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+2017/08/16 16:00:47 [DEBUG] Resource state not found for "ansible_script.test": ansible_script.test
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachStateTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.RootVariableTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ParentProviderTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Attach provider request: []string{} ansible
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachProviderConfigTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ModuleVariableTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [DEBUG] ReferenceTransformer: "ansible_script.test" references: []
+2017/08/16 16:00:47 [DEBUG] ReferenceTransformer: "provider.ansible" references: []
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ReferenceTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.CountBoundaryTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.CloseProviderTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible (close) - *terraform.graphNodeCloseProvider
+  ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.CloseProvisionerTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible (close) - *terraform.graphNodeCloseProvider
+  ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.RootTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible (close) - *terraform.graphNodeCloseProvider
+  ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+root - terraform.graphNodeRoot
+  meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  provider.ansible (close) - *terraform.graphNodeCloseProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+ansible_script.test - *terraform.NodePlannableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodePlannableResource
+provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible (close) - *terraform.graphNodeCloseProvider
+  ansible_script.test - *terraform.NodePlannableResource
+root - terraform.graphNodeRoot
+  meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  provider.ansible (close) - *terraform.graphNodeCloseProvider
+2017/08/16 16:00:47 [DEBUG] Starting graph walk: walkPlan
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "meta.count-boundary (count boundary fixup)"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "provider.ansible (close)"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "root"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "provider.ansible"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "root" waiting on "meta.count-boundary (count boundary fixup)"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "root" waiting on "provider.ansible (close)"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "ansible_script.test" waiting on "provider.ansible"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "meta.count-boundary (count boundary fixup)" waiting on "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "provider.ansible (close)" waiting on "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] dag/walk: dependencies changed for "root", sending new deps
+2017/08/16 16:00:47 [DEBUG] dag/walk: dependencies changed for "ansible_script.test", sending new deps
+2017/08/16 16:00:47 [DEBUG] dag/walk: dependencies changed for "meta.count-boundary (count boundary fixup)", sending new deps
+2017/08/16 16:00:47 [DEBUG] dag/walk: dependencies changed for "provider.ansible (close)", sending new deps
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "provider.ansible"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.provider.ansible': walking
+2017/08/16 16:00:47 [DEBUG] vertex 'root.provider.ansible': evaluating
+2017/08/16 16:00:47 [TRACE] [walkPlan] Entering eval tree: provider.ansible
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSequence
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalInitProvider
+2017/08/16 16:00:47 [DEBUG] root: eval: terraform.EvalNoop
+2017/08/16 16:00:47 [DEBUG] root: eval: terraform.EvalNoop
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalOpFilter
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSequence
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalGetProvider
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalInterpolate
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalBuildProviderConfig
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSetProviderConfig
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalOpFilter
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSequence
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalConfigProvider
+2017/08/16 16:00:47 [TRACE] [walkPlan] Exiting eval tree: provider.ansible
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.ansible_script.test': walking
+2017/08/16 16:00:47 [DEBUG] vertex 'root.ansible_script.test': evaluating
+2017/08/16 16:00:47 [TRACE] [walkPlan] Entering eval tree: ansible_script.test
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSequence
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalInterpolate
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalCountCheckComputed
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalIf
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2017/08/16 16:00:47 [TRACE] [walkPlan] Exiting eval tree: ansible_script.test
+2017/08/16 16:00:47 [DEBUG] vertex 'root.ansible_script.test': expanding/walking dynamic subgraph
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+ansible_script.test - *terraform.NodePlannableResourceInstance
+2017/08/16 16:00:47 [TRACE] OrphanResourceCount: Starting...
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.OrphanResourceCountTransformer:
+
+ansible_script.test - *terraform.NodePlannableResourceInstance
+2017/08/16 16:00:47 [DEBUG] Resource state not found for "ansible_script.test": ansible_script.test
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachStateTransformer:
+
+ansible_script.test - *terraform.NodePlannableResourceInstance
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+ansible_script.test - *terraform.NodePlannableResourceInstance
+2017/08/16 16:00:47 [DEBUG] ReferenceTransformer: "ansible_script.test" references: []
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ReferenceTransformer:
+
+ansible_script.test - *terraform.NodePlannableResourceInstance
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.RootTransformer:
+
+ansible_script.test - *terraform.NodePlannableResourceInstance
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.ansible_script.test': walking
+2017/08/16 16:00:47 [DEBUG] vertex 'root.ansible_script.test': evaluating
+2017/08/16 16:00:47 [TRACE] [walkPlan] Entering eval tree: ansible_script.test
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSequence
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalInterpolate
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalGetProvider
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalValidateResource
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalReadState
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalDiff
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalCheckPreventDestroy
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalWriteState
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalWriteDiff
+2017/08/16 16:00:47 [TRACE] [walkPlan] Exiting eval tree: ansible_script.test
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "provider.ansible (close)"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.provider.ansible (close)': walking
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "meta.count-boundary (count boundary fixup)"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.meta.count-boundary (count boundary fixup)': walking
+2017/08/16 16:00:47 [DEBUG] vertex 'root.provider.ansible (close)': evaluating
+2017/08/16 16:00:47 [TRACE] [walkPlan] Entering eval tree: provider.ansible (close)
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalCloseProvider
+2017/08/16 16:00:47 [TRACE] [walkPlan] Exiting eval tree: provider.ansible (close)
+2017/08/16 16:00:47 [DEBUG] vertex 'root.meta.count-boundary (count boundary fixup)': evaluating
+2017/08/16 16:00:47 [TRACE] [walkPlan] Entering eval tree: meta.count-boundary (count boundary fixup)
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundaryGlobal
+2017/08/16 16:00:47 [TRACE] [walkPlan] Exiting eval tree: meta.count-boundary (count boundary fixup)
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "root"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.root': walking
+2017/08/16 16:00:47 [INFO] terraform: building graph: GraphTypeApply
+2017/08/16 16:00:47 [TRACE] DiffTransformer: starting
+2017/08/16 16:00:47 [TRACE] DiffTransformer: Module: CREATE: ansible_script.test
+  file:   "" => "test.sh"
+  host:   "" => "192.168.10.180"
+  path:   "" => "/tmp"
+  result: "" => "1"
+  type:   "" => "sh"
+2017/08/16 16:00:47 [TRACE] DiffTransformer: Resource "ansible_script.test": *terraform.InstanceDiff{mu:sync.Mutex{state:0, sema:0x0}, Attributes:map[string]*terraform.ResourceAttrDiff{"path":*terraform.ResourceAttrDiff{Old:"", New:"/tmp", NewComputed:false, NewRemoved:false, NewExtra:interface {}(nil), RequiresNew:false, Sensitive:false, Type:0x0}, "type":*terraform.ResourceAttrDiff{Old:"", New:"sh", NewComputed:false, NewRemoved:false, NewExtra:interface {}(nil), RequiresNew:false, Sensitive:false, Type:0x0}, "host":*terraform.ResourceAttrDiff{Old:"", New:"192.168.10.180", NewComputed:false, NewRemoved:false, NewExtra:interface {}(nil), RequiresNew:false, Sensitive:false, Type:0x0}, "id":*terraform.ResourceAttrDiff{Old:"", New:"", NewComputed:true, NewRemoved:false, NewExtra:interface {}(nil), RequiresNew:true, Sensitive:false, Type:0x2}, "result":*terraform.ResourceAttrDiff{Old:"", New:"1", NewComputed:false, NewRemoved:false, NewExtra:interface {}(nil), RequiresNew:false, Sensitive:false, Type:0x0}, "file":*terraform.ResourceAttrDiff{Old:"", New:"test.sh", NewComputed:false, NewRemoved:false, NewExtra:interface {}(nil), RequiresNew:false, Sensitive:false, Type:0x0}}, Destroy:false, DestroyDeposed:false, DestroyTainted:false, Meta:map[string]interface {}(nil)}
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.DiffTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.OrphanOutputTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+2017/08/16 16:00:47 [TRACE] AttachResourceConfigTransformer: Beginning...
+2017/08/16 16:00:47 [TRACE] AttachResourceConfigTransformer: Attach resource config request: ansible_script.test
+2017/08/16 16:00:47 [TRACE] Attaching resource config: &config.Resource{Mode:0, Name:"test", Type:"ansible_script", RawCount:(*config.RawConfig)(0xc420207bc0), RawConfig:(*config.RawConfig)(0xc420207740), Provisioners:[]*config.Provisioner(nil), Provider:"", DependsOn:[]string(nil), Lifecycle:config.ResourceLifecycle{CreateBeforeDestroy:false, PreventDestroy:false, IgnoreChanges:[]string(nil)}}
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachResourceConfigTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+2017/08/16 16:00:47 [DEBUG] Resource state not found for "ansible_script.test": ansible_script.test
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachStateTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ParentProviderTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Attach provider request: []string{} ansible
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.AttachProviderConfigTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] DestroyEdgeTransformer: Beginning destroy edge transformation...
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.DestroyEdgeTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] CBDEdgeTransformer: Beginning CBD transformation...
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.CBDEdgeTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.MissingProvisionerTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ProvisionerTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.RootVariableTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.OutputTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ModuleVariableTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [DEBUG] ReferenceTransformer: "ansible_script.test" references: []
+2017/08/16 16:00:47 [DEBUG] ReferenceTransformer: "provider.ansible" references: []
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.ReferenceTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.CountBoundaryTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.CloseProviderTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible (close) - *terraform.graphNodeCloseProvider
+  ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.CloseProvisionerTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible (close) - *terraform.graphNodeCloseProvider
+  ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.RootTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible (close) - *terraform.graphNodeCloseProvider
+  ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+root - terraform.graphNodeRoot
+  meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  provider.ansible (close) - *terraform.graphNodeCloseProvider
+2017/08/16 16:00:47 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+ansible_script.test - *terraform.NodeApplyableResource
+  provider.ansible - *terraform.NodeApplyableProvider
+meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  ansible_script.test - *terraform.NodeApplyableResource
+provider.ansible - *terraform.NodeApplyableProvider
+provider.ansible (close) - *terraform.graphNodeCloseProvider
+  ansible_script.test - *terraform.NodeApplyableResource
+root - terraform.graphNodeRoot
+  meta.count-boundary (count boundary fixup) - *terraform.NodeCountBoundary
+  provider.ansible (close) - *terraform.graphNodeCloseProvider
+2017/08/16 16:00:47 [DEBUG] Starting graph walk: walkApply
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "root"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "provider.ansible"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "meta.count-boundary (count boundary fixup)"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added new vertex: "provider.ansible (close)"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "root" waiting on "provider.ansible (close)"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "ansible_script.test" waiting on "provider.ansible"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "meta.count-boundary (count boundary fixup)" waiting on "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "provider.ansible (close)" waiting on "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] dag/walk: added edge: "root" waiting on "meta.count-boundary (count boundary fixup)"
+2017/08/16 16:00:47 [DEBUG] dag/walk: dependencies changed for "root", sending new deps
+2017/08/16 16:00:47 [DEBUG] dag/walk: dependencies changed for "ansible_script.test", sending new deps
+2017/08/16 16:00:47 [DEBUG] dag/walk: dependencies changed for "meta.count-boundary (count boundary fixup)", sending new deps
+2017/08/16 16:00:47 [DEBUG] dag/walk: dependencies changed for "provider.ansible (close)", sending new deps
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "provider.ansible"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.provider.ansible': walking
+2017/08/16 16:00:47 [DEBUG] vertex 'root.provider.ansible': evaluating
+2017/08/16 16:00:47 [TRACE] [walkApply] Entering eval tree: provider.ansible
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSequence
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalInitProvider
+2017/08/16 16:00:47 [DEBUG] root: eval: terraform.EvalNoop
+2017/08/16 16:00:47 [DEBUG] root: eval: terraform.EvalNoop
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalOpFilter
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSequence
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalGetProvider
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalInterpolate
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalBuildProviderConfig
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSetProviderConfig
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalOpFilter
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSequence
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalConfigProvider
+2017/08/16 16:00:47 [TRACE] [walkApply] Exiting eval tree: provider.ansible
+2017/08/16 16:00:47 [DEBUG] dag/walk: walking "ansible_script.test"
+2017/08/16 16:00:47 [DEBUG] vertex 'root.ansible_script.test': walking
+2017/08/16 16:00:47 [DEBUG] vertex 'root.ansible_script.test': evaluating
+2017/08/16 16:00:47 [TRACE] [walkApply] Entering eval tree: ansible_script.test
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalSequence
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalInstanceInfo
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalReadDiff
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalIf
+2017/08/16 16:00:47 [DEBUG] root: eval: terraform.EvalNoop
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalIf
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalInterpolate
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalGetProvider
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalReadState
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalValidateResource
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalDiff
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalReadDiff
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalCompareDiff
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalGetProvider
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalReadState
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalApplyPre
+2017/08/16 16:00:47 [DEBUG] root: eval: *terraform.EvalApply
+2017/08/16 16:00:47 [DEBUG] apply: ansible_script.test: executing Apply
+2017/08/16 16:00:47 [DEBUG] plugin: terraform-provider-ansible: 2017/08/16 16:00:47 [DEBUG] No meta timeoutkey found in Apply()
+2017/08/16 16:00:49 [DEBUG] plugin: terraform-provider-ansible: time="2017-08-16T16:00:49+08:00" level=info msg="script copy result: 192.168.10.180 | SUCCESS => {\n    \"changed\": true, \n    \"checksum\": \"355e92289a50adba1dd351e0ccf7906730f76693\", \n    \"dest\": \"/tmp/test.sh\", \n    \"gid\": 0, \n    \"group\": \"root\", \n    \"md5sum\": \"cc96ff1c3c7c3644997889e7efae0c4a\", \n    \"mode\": \"0644\", \n    \"owner\": \"root\", \n    \"size\": 49, \n    \"src\": \"/root/.ansible/tmp/ansible-tmp-1502870448.58-140400130441140/source\", \n    \"state\": \"file\", \n    \"uid\": 0\n}\n"
+2017/08/16 16:00:50 [DEBUG] plugin: terraform-provider-ansible: time="2017-08-16T16:00:50+08:00" level=error msg="error while execute: exit status 2"
+2017/08/16 16:00:50 [DEBUG] root: eval: *terraform.EvalWriteState
+2017/08/16 16:00:50 [DEBUG] root: eval: *terraform.EvalApplyProvisioners
+2017/08/16 16:00:50 [DEBUG] root: eval: *terraform.EvalIf
+2017/08/16 16:00:50 [DEBUG] root: eval: *terraform.EvalWriteState
+2017/08/16 16:00:50 [DEBUG] root: eval: *terraform.EvalWriteDiff
+2017/08/16 16:00:50 [DEBUG] root: eval: *terraform.EvalApplyPost
+2017/08/16 16:00:50 [ERROR] root: eval: *terraform.EvalApplyPost, err: 1 error(s) occurred:
+
+* ansible_script.test: exit status 2
+2017/08/16 16:00:50 [ERROR] root: eval: *terraform.EvalSequence, err: 1 error(s) occurred:
+
+* ansible_script.test: exit status 2
+2017/08/16 16:00:50 [TRACE] [walkApply] Exiting eval tree: ansible_script.test
+2017/08/16 16:00:50 [DEBUG] dag/walk: upstream errored, not walking "provider.ansible (close)"
+2017/08/16 16:00:50 [DEBUG] dag/walk: upstream errored, not walking "meta.count-boundary (count boundary fixup)"
+2017/08/16 16:00:50 [DEBUG] dag/walk: upstream errored, not walking "root"
+2017/08/16 16:00:50 [TRACE] Preserving existing state lineage "f1674e60-e143-4c69-a7f2-d34ee72e27e6"
+2017/08/16 16:00:50 [DEBUG] plugin: waiting for all plugin processes to complete...
+2017/08/16 16:00:50 [DEBUG] plugin: /Users/wuziyang/Rancher/code/gopath/src/github.com/terraform-providers/terraform-provider-ansible/terraform-provider-ansible: plugin process exited
+2017/08/16 16:00:54 [INFO] Terraform version: 0.10.0  2041053ee9444fa8175a298093b55a89586a1823
+2017/08/16 16:00:54 [INFO] Go runtime version: go1.8
+2017/08/16 16:00:54 [INFO] CLI args: []string{"/usr/local/bin/terraform", "show"}
+2017/08/16 16:00:54 [DEBUG] Attempting to open CLI config file: /Users/wuziyang/.terraformrc
+2017/08/16 16:00:54 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2017/08/16 16:00:54 [INFO] CLI command args: []string{"show"}
+2017/08/16 16:00:54 [DEBUG] command: loading backend config file: /Users/wuziyang/Rancher/code/gopath/src/github.com/terraform-providers/terraform-provider-ansible
+2017/08/16 16:00:54 [WARNING] BackendOpts.Config not set, but config found
+2017/08/16 16:00:54 [INFO] command: empty terraform config, returning nil
+2017/08/16 16:00:54 [DEBUG] command: no data state file found for backend config
+2017/08/16 16:00:54 [DEBUG] New state was assigned lineage "5f833901-bdb5-4cd6-af61-91784152c627"
+2017/08/16 16:00:54 [INFO] command: backend initialized: <nil>
+2017/08/16 16:00:54 [DEBUG] checking for provider in "."
+2017/08/16 16:00:54 [DEBUG] skipping ".git", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping ".gitignore", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping ".terraform", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "README.md", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "ansible.tf", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "main.go", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "provider.go", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "resource_ansible_script.go", not a provider
+2017/08/16 16:00:54 [WARNING] found legacy provider "terraform-provider-ansible"
+2017/08/16 16:00:54 [DEBUG] skipping "terraform.tfstate", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "test.sh", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "tflogs", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "vendor", not a provider
+2017/08/16 16:00:54 [DEBUG] checking for provider in "/usr/local/bin"
+2017/08/16 16:00:54 [DEBUG] skipping "2to3", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "2to3-3.6", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "VBoxAutostart", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "VBoxBalloonCtrl", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "VBoxBugReport", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "VBoxDTrace", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "VBoxHeadless", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "VBoxManage", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "VBoxVRDP", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "VirtualBox", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "ansible", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "ansible-connection", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "ansible-console", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "ansible-doc", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "ansible-galaxy", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "ansible-playbook", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "ansible-pull", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "ansible-vault", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "brew", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "capinfos", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "ccmake", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "cmake", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "cmakexbuild", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "cpack", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "ctags", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "ctest", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "dapper", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "dftest", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "docker", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "docker-compose", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "docker-credential-osxkeychain", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "docker-machine", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "dumpcap", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "easy_install-3.6", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "editcap", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "hyperkit", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "idea", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "idle3", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "idle3.6", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "innochecksum", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "ip", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "kubectl", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "lz4_decompress", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mergecap", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "minikube", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "my_print_defaults", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "myisam_ftdump", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "myisamchk", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "myisamlog", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "myisampack", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysql", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysql.server", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_client_test", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_client_test_embedded", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_config", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_config_editor", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_embedded", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_install_db", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_plugin", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_secure_installation", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_ssl_rsa_setup", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_tzinfo_to_sql", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_upgrade", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysqladmin", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysqlbinlog", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysqlcheck", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysqld", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysqld_multi", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysqld_safe", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysqldump", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysqldumpslow", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysqlimport", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysqlpump", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysqlshow", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysqlslap", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysqltest", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysqltest_embedded", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "mysqlxtest", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "nginx", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "notary", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "pbr", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "pcre-config", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "pcregrep", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "pcretest", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "perror", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "pip", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "pip2", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "pip2.7", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "pip3", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "pip3.6", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "polipo", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "proxychains4", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "pydoc3", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "pydoc3.6", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "python3", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "python3-32", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "python3-config", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "python3.6", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "python3.6-32", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "python3.6-config", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "python3.6m", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "python3.6m-config", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "pyvenv", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "pyvenv-3.6", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "randpkt", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "rawshark", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "replace", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "resolve_stack_dump", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "resolveip", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "terraform", not a provider
+2017/08/16 16:00:54 [WARNING] found legacy provider "terraform-provider-ansible"
+2017/08/16 16:00:54 [DEBUG] skipping "text2pcap", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "tox", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "tox-quickstart", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "trash", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "tshark", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "vagrant", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "vbox-img", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "vboxwebsrv", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "virtualenv", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "vpnkit", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "wget", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "wheel", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "wireshark", not a provider
+2017/08/16 16:00:54 [DEBUG] skipping "zlib_decompress", not a provider
+2017/08/16 16:00:54 [DEBUG] checking for provider in ".terraform/plugins/darwin_amd64"
+2017/08/16 16:00:54 [DEBUG] skipping "lock.json", not a provider
+2017/08/16 16:00:54 [DEBUG] checking for provider in "/Users/wuziyang/.terraform.d/plugins"
+2017/08/16 16:00:54 [DEBUG] found valid plugin: "ansible"
+2017/08/16 16:00:54 [DEBUG] checking for provisioner in "."
+2017/08/16 16:00:54 [DEBUG] skipping ".git", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping ".gitignore", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping ".terraform", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "README.md", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "ansible.tf", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "main.go", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "provider.go", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "resource_ansible_script.go", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "terraform-provider-ansible", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "terraform.tfstate", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "test.sh", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "tflogs", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "vendor", not a provisioner
+2017/08/16 16:00:54 [DEBUG] checking for provisioner in "/usr/local/bin"
+2017/08/16 16:00:54 [DEBUG] skipping "2to3", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "2to3-3.6", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "VBoxAutostart", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "VBoxBalloonCtrl", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "VBoxBugReport", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "VBoxDTrace", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "VBoxHeadless", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "VBoxManage", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "VBoxVRDP", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "VirtualBox", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "ansible", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "ansible-connection", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "ansible-console", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "ansible-doc", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "ansible-galaxy", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "ansible-playbook", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "ansible-pull", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "ansible-vault", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "brew", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "capinfos", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "ccmake", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "cmake", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "cmakexbuild", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "cpack", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "ctags", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "ctest", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "dapper", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "dftest", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "docker", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "docker-compose", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "docker-credential-osxkeychain", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "docker-machine", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "dumpcap", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "easy_install-3.6", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "editcap", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "hyperkit", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "idea", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "idle3", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "idle3.6", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "innochecksum", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "ip", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "kubectl", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "lz4_decompress", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mergecap", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "minikube", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "my_print_defaults", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "myisam_ftdump", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "myisamchk", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "myisamlog", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "myisampack", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysql", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysql.server", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_client_test", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_client_test_embedded", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_config", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_config_editor", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_embedded", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_install_db", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_plugin", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_secure_installation", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_ssl_rsa_setup", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_tzinfo_to_sql", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysql_upgrade", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysqladmin", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysqlbinlog", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysqlcheck", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysqld", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysqld_multi", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysqld_safe", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysqldump", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysqldumpslow", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysqlimport", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysqlpump", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysqlshow", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysqlslap", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysqltest", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysqltest_embedded", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "mysqlxtest", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "nginx", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "notary", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "pbr", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "pcre-config", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "pcregrep", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "pcretest", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "perror", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "pip", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "pip2", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "pip2.7", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "pip3", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "pip3.6", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "polipo", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "proxychains4", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "pydoc3", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "pydoc3.6", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "python3", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "python3-32", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "python3-config", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "python3.6", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "python3.6-32", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "python3.6-config", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "python3.6m", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "python3.6m-config", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "pyvenv", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "pyvenv-3.6", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "randpkt", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "rawshark", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "replace", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "resolve_stack_dump", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "resolveip", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "terraform", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "terraform-provider-ansible", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "text2pcap", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "tox", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "tox-quickstart", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "trash", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "tshark", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "vagrant", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "vbox-img", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "vboxwebsrv", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "virtualenv", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "vpnkit", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "wget", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "wheel", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "wireshark", not a provisioner
+2017/08/16 16:00:54 [DEBUG] skipping "zlib_decompress", not a provisioner
+2017/08/16 16:00:54 [DEBUG] checking for provisioner in ".terraform/plugins/darwin_amd64"
+2017/08/16 16:00:54 [DEBUG] skipping "lock.json", not a provisioner
+2017/08/16 16:00:54 [DEBUG] checking for provisioner in "/Users/wuziyang/.terraform.d/plugins"
+2017/08/16 16:00:54 [INFO] command: backend <nil> is not enhanced, wrapping in local
+2017/08/16 16:00:54 [TRACE] Preserving existing state lineage "f1674e60-e143-4c69-a7f2-d34ee72e27e6"
+2017/08/16 16:00:54 [TRACE] Preserving existing state lineage "f1674e60-e143-4c69-a7f2-d34ee72e27e6"
+2017/08/16 16:00:54 [DEBUG] plugin: waiting for all plugin processes to complete...

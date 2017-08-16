@@ -56,7 +56,7 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 		logrus.Errorf("error while copy: %s", err)
 		d.Set("result", string(resCopy))
 		d.SetId("1")
-		return nil
+		return err
 	}
 	logrus.Infof("script copy result: %s", string(resCopy))
 
@@ -67,7 +67,7 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 		logrus.Errorf("error while execute: %s", err)
 		d.Set("result", string(res))
 		d.SetId("1")
-		return nil
+		return err
 	}
 	logrus.Infof("script run result: %s", string(res))
 	d.Set("result", string(res))
