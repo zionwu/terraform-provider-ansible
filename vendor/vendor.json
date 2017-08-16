@@ -3,6 +3,12 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "BCmjskha6fhGDUxvgayGZnF8RUc=",
+			"path": "github.com/Sirupsen/logrus",
+			"revision": "181d419aa9e2223811b824e8f0b4af96f9ba9302",
+			"revisionTime": "2017-07-28T07:42:14Z"
+		},
+		{
 			"checksumSHA1": "GYw42Nszv9bUkWqU+NSY3+RcCx8=",
 			"path": "github.com/hashicorp/terraform",
 			"revision": "1babdd4e5ca493bef2e51bfa9b98fa9976306c95",
