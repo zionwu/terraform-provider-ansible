@@ -1,7 +1,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"os/exec"
 	"path/filepath"
 
@@ -21,7 +23,7 @@ func resourceAnsibleScript() *schema.Resource {
 				Type:     schema.TypeString,
 				Required: true,
 			},
-			"path": &schema.Schema{
+			"target_path": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: true,
 			},
@@ -33,9 +35,17 @@ func resourceAnsibleScript() *schema.Resource {
 				Type:     schema.TypeString,
 				Required: true,
 			},
-			"result": &schema.Schema{
+			"host_username": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: true,
+			},
+			"host_password": &schema.Schema{
+				Type:     schema.TypeString,
+				Required: true,
+			},
+			"result": &schema.Schema{
+				Type:     schema.TypeString,
+				Optional: true,
 			},
 		},
 	}
@@ -45,12 +55,46 @@ var res []byte
 
 func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error {
 	host := d.Get("host").(string)
+	hostUsername := d.Get("host_username").(string)
+	hostPassword := d.Get("host_password").(string)
 	runType := d.Get("type").(string)
 	file := d.Get("file").(string)
-	path := d.Get("path").(string)
+	path := d.Get("target_path").(string)
+
+	//write ansible host config
+	f, err := os.OpenFile("/etc/ansible/hosts", os.O_RDWR|os.O_APPEND, 0660)
+	if err != nil {
+		logrus.Errorf("error while copy: %s", err)
+		d.SetId("1")
+		return err
+	}
+	defer f.Close()
+
+	config := fmt.Sprintf("%s ansible_ssh_user=%s ansible_ssh_pass=%s", host, hostUsername, hostPassword)
+	hostExist := false
+	scanner := bufio.NewScanner(f)
+	logrus.Info(config)
+	for scanner.Scan() {
+		line := scanner.Text()
+
+		logrus.Info(line)
+		if line == config {
+			hostExist = true
+			break
+		}
+	}
+
+	if !hostExist {
+		_, err := f.WriteString(config)
+		if err != nil {
+			logrus.Errorf("error while updating ansible host: %s", err)
+			d.SetId("1")
+			return err
+		}
+	}
 
 	copyStr := fmt.Sprintf("src=%s dest=%s", file, filepath.Join(path, file))
-	copyCmd := exec.Command("ansible", host, "-u", "root", "-m", "copy", "-a", copyStr)
+	copyCmd := exec.Command("ansible", host, "-u", hostUsername, "-m", "copy", "-a", copyStr)
 	resCopy, err := copyCmd.Output()
 	if err != nil {
 		logrus.Errorf("error while copy: %s", err)
@@ -61,7 +105,7 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 	logrus.Infof("script copy result: %s", string(resCopy))
 
 	runStr := fmt.Sprintf("%s %s", runType, filepath.Join(path, file))
-	runCmd := exec.Command("ansible", host, "-u", "root", "-a", runStr)
+	runCmd := exec.Command("ansible", host, "-u", hostUsername, "-a", runStr)
 	res, err := runCmd.Output()
 	if err != nil {
 		logrus.Errorf("error while execute: %s", err)
@@ -74,7 +118,6 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 	d.SetId("1")
 
 	return resourceAnsibleScriptRead(d, meta)
-
 }
 
 func resourceAnsibleScriptRead(d *schema.ResourceData, meta interface{}) error {
