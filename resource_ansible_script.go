@@ -7,6 +7,8 @@ import (
 	"os/exec"
 	"path/filepath"
 
+	"github.com/pkg/errors"
+
 	"github.com/Sirupsen/logrus"
 	"github.com/hashicorp/terraform/helper/schema"
 )
@@ -95,7 +97,7 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 	}
 
 	if !hostExist {
-		_, err := f.WriteString(config)
+		_, err := f.WriteString(config + "\n")
 		if err != nil {
 			logrus.Errorf("error while updating ansible host: %s", err)
 			d.SetId("1")
@@ -106,7 +108,11 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 	copyStr := fmt.Sprintf("src=%s dest=%s", filepath.Join(sourcePath, file), filepath.Join(targetPath, file))
 	copyCmd := exec.Command("ansible", host, "-u", hostUsername, "-m", "copy", "-a", copyStr)
 	resCopy, err := copyCmd.Output()
+	logrus.Infof("exec %v", copyCmd.Args)
 	if err != nil {
+		if ee, ok := err.(*exec.ExitError); ok {
+			err = errors.Wrapf(err, "%s", ee.Stderr)
+		}
 		logrus.Errorf("error while copy: %s", err)
 		d.Set("result", string(resCopy))
 		d.SetId("1")
@@ -117,7 +123,12 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 	runStr := fmt.Sprintf("%s %s %s", runType, filepath.Join(targetPath, file), param)
 	runCmd := exec.Command("ansible", host, "-u", hostUsername, "-a", runStr)
 	res, err := runCmd.Output()
+	logrus.Infof("exec %v", runCmd.Args)
+
 	if err != nil {
+		if ee, ok := err.(*exec.ExitError); ok {
+			err = errors.Wrapf(err, "%s", ee.Stderr)
+		}
 		logrus.Errorf("error while execute: %s", err)
 		d.Set("result", string(res))
 		d.SetId("1")

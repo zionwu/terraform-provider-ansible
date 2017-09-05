@@ -460,6 +460,12 @@
 			"revisionTime": "2017-06-05T22:18:37Z"
 		},
 		{
+			"checksumSHA1": "rJab1YdNhQooDiBWNnt7TLWPyBU=",
+			"path": "github.com/pkg/errors",
+			"revision": "c605e284fe17294bda444b34710735b29d1a9d90",
+			"revisionTime": "2017-05-05T04:36:39Z"
+		},
+		{
 			"checksumSHA1": "zmC8/3V4ls53DJlNTKDZwPSC/dA=",
 			"origin": "github.com/hashicorp/terraform/vendor/github.com/satori/go.uuid",
 			"path": "github.com/satori/go.uuid",
