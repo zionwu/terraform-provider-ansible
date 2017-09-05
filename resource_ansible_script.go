@@ -23,6 +23,10 @@ func resourceAnsibleScript() *schema.Resource {
 				Type:     schema.TypeString,
 				Required: true,
 			},
+			"source_path": &schema.Schema{
+				Type:     schema.TypeString,
+				Required: true,
+			},
 			"target_path": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: true,
@@ -34,6 +38,10 @@ func resourceAnsibleScript() *schema.Resource {
 			"host": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: true,
+			},
+			"param": &schema.Schema{
+				Type:     schema.TypeString,
+				Optional: true,
 			},
 			"host_username": &schema.Schema{
 				Type:     schema.TypeString,
@@ -59,7 +67,9 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 	hostPassword := d.Get("host_password").(string)
 	runType := d.Get("type").(string)
 	file := d.Get("file").(string)
-	path := d.Get("target_path").(string)
+	targetPath := d.Get("target_path").(string)
+	sourcePath := d.Get("source_path").(string)
+	param := d.Get("param").(string)
 
 	//write ansible host config
 	f, err := os.OpenFile("/etc/ansible/hosts", os.O_RDWR|os.O_APPEND, 0660)
@@ -93,7 +103,7 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 		}
 	}
 
-	copyStr := fmt.Sprintf("src=%s dest=%s", file, filepath.Join(path, file))
+	copyStr := fmt.Sprintf("src=%s dest=%s", filepath.Join(sourcePath, file), filepath.Join(targetPath, file))
 	copyCmd := exec.Command("ansible", host, "-u", hostUsername, "-m", "copy", "-a", copyStr)
 	resCopy, err := copyCmd.Output()
 	if err != nil {
@@ -104,7 +114,7 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 	}
 	logrus.Infof("script copy result: %s", string(resCopy))
 
-	runStr := fmt.Sprintf("%s %s", runType, filepath.Join(path, file))
+	runStr := fmt.Sprintf("%s %s %s", runType, filepath.Join(targetPath, file), param)
 	runCmd := exec.Command("ansible", host, "-u", hostUsername, "-a", runStr)
 	res, err := runCmd.Output()
 	if err != nil {
