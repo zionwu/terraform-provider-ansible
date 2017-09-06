@@ -3,9 +3,12 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"net"
 	"os"
 	"os/exec"
 	"path/filepath"
+
+	"time"
 
 	"github.com/pkg/errors"
 
@@ -53,6 +56,11 @@ func resourceAnsibleScript() *schema.Resource {
 				Type:     schema.TypeString,
 				Required: true,
 			},
+			"sleep_interval": &schema.Schema{
+				Type:     schema.TypeInt,
+				Optional: true,
+				Default:  60,
+			},
 			"result": &schema.Schema{
 				Type:     schema.TypeString,
 				Optional: true,
@@ -72,6 +80,9 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 	targetPath := d.Get("target_path").(string)
 	sourcePath := d.Get("source_path").(string)
 	param := d.Get("param").(string)
+	sleepInterval := d.Get("sleep_interval").(int)
+
+	dial("tcp", host+":22", time.Duration(sleepInterval)*time.Second)
 
 	//write ansible host config
 	f, err := os.OpenFile("/etc/ansible/hosts", os.O_RDWR|os.O_APPEND, 0660)
@@ -113,7 +124,7 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 		if ee, ok := err.(*exec.ExitError); ok {
 			err = errors.Wrapf(err, "%s", ee.Stderr)
 		}
-		logrus.Errorf("error while copy: %s", err)
+		logrus.Errorf("error while copy: %s res: %s", err, string(resCopy))
 		d.Set("result", string(resCopy))
 		d.SetId("1")
 		return err
@@ -129,7 +140,7 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 		if ee, ok := err.(*exec.ExitError); ok {
 			err = errors.Wrapf(err, "%s", ee.Stderr)
 		}
-		logrus.Errorf("error while execute: %s", err)
+		logrus.Errorf("error while execute: %s res: %s", err, string(res))
 		d.Set("result", string(res))
 		d.SetId("1")
 		return err
@@ -151,4 +162,22 @@ func resourceAnsibleScriptUpdate(d *schema.ResourceData, meta interface{}) error
 
 func resourceAnsibleScriptDelete(d *schema.ResourceData, meta interface{}) error {
 	return nil
+}
+
+// Dial dial the raddr before timeout
+func dial(protocol, raddr string, timeout time.Duration) bool {
+	timer := time.NewTimer(timeout)
+	for {
+		select {
+		case <-timer.C:
+			return false
+		default:
+			conn, err := net.DialTimeout(protocol, raddr, time.Second)
+			if err == nil {
+				conn.Close()
+				return true
+			}
+			time.Sleep(time.Second)
+		}
+	}
 }
