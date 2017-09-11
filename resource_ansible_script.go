@@ -24,10 +24,6 @@ func resourceAnsibleScript() *schema.Resource {
 		Delete: resourceAnsibleScriptDelete,
 
 		Schema: map[string]*schema.Schema{
-			"file": &schema.Schema{
-				Type:     schema.TypeString,
-				Required: true,
-			},
 			"source_path": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: true,
@@ -59,7 +55,7 @@ func resourceAnsibleScript() *schema.Resource {
 			"sleep_interval": &schema.Schema{
 				Type:     schema.TypeInt,
 				Optional: true,
-				Default:  60,
+				Default:  1200,
 			},
 			"result": &schema.Schema{
 				Type:     schema.TypeString,
@@ -76,7 +72,6 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 	hostUsername := d.Get("host_username").(string)
 	hostPassword := d.Get("host_password").(string)
 	runType := d.Get("type").(string)
-	file := d.Get("file").(string)
 	targetPath := d.Get("target_path").(string)
 	sourcePath := d.Get("source_path").(string)
 	param := d.Get("param").(string)
@@ -115,8 +110,8 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 			return err
 		}
 	}
-
-	copyStr := fmt.Sprintf("src=%s dest=%s", filepath.Join(sourcePath, file), filepath.Join(targetPath, file))
+	file := filepath.Base(sourcePath)
+	copyStr := fmt.Sprintf("src=%s dest=%s", sourcePath, filepath.Join(targetPath, file))
 	copyCmd := exec.Command("ansible", host, "-u", hostUsername, "-m", "copy", "-a", copyStr)
 	resCopy, err := copyCmd.Output()
 	logrus.Infof("exec %v", copyCmd.Args)
