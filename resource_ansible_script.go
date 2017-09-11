@@ -57,6 +57,11 @@ func resourceAnsibleScript() *schema.Resource {
 				Optional: true,
 				Default:  1200,
 			},
+			"show_result": &schema.Schema{
+				Type:     schema.TypeBool,
+				Optional: true,
+				Default:  true,
+			},
 			"result": &schema.Schema{
 				Type:     schema.TypeString,
 				Optional: true,
@@ -76,8 +81,12 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 	sourcePath := d.Get("source_path").(string)
 	param := d.Get("param").(string)
 	sleepInterval := d.Get("sleep_interval").(int)
+	showResult := d.Get("show_result").(bool)
 
-	dial("tcp", host+":22", time.Duration(sleepInterval)*time.Second)
+	if !dial("tcp", host+":22", time.Duration(sleepInterval)*time.Second) {
+		logrus.Errorf("error while connecting host")
+		return nil
+	}
 
 	//write ansible host config
 	f, err := os.OpenFile("/etc/ansible/hosts", os.O_RDWR|os.O_APPEND, 0660)
@@ -120,7 +129,9 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 			err = errors.Wrapf(err, "%s", ee.Stderr)
 		}
 		logrus.Errorf("error while copy: %s res: %s", err, string(resCopy))
-		d.Set("result", string(resCopy))
+		if showResult {
+			d.Set("result", string(resCopy))
+		}
 		d.SetId("1")
 		return err
 	}
@@ -136,12 +147,16 @@ func resourceAnsibleScriptCreate(d *schema.ResourceData, meta interface{}) error
 			err = errors.Wrapf(err, "%s", ee.Stderr)
 		}
 		logrus.Errorf("error while execute: %s res: %s", err, string(res))
-		d.Set("result", string(res))
+		if showResult {
+			d.Set("result", string(res))
+		}
 		d.SetId("1")
 		return err
 	}
 	logrus.Infof("script run result: %s", string(res))
-	d.Set("result", string(res))
+	if showResult {
+		d.Set("result", string(res))
+	}
 	d.SetId("1")
 
 	return resourceAnsibleScriptRead(d, meta)
