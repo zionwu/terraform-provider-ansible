@@ -24,44 +24,54 @@ func resourceAnsibleScript() *schema.Resource {
 		Delete: resourceAnsibleScriptDelete,
 
 		Schema: map[string]*schema.Schema{
+			//脚本在本机的绝对路径，如/home/user1/script.sh
 			"source_path": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: true,
 			},
+			//脚本执行目标主机上存放的目录，如/tmp
 			"target_path": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: true,
 			},
+			//脚本的类型，sh/python/perl
 			"type": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: true,
 			},
+			//脚本执行目标主机的IP
 			"host": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: true,
 			},
+			//传递给脚本的参数，多个用空格隔开
 			"param": &schema.Schema{
 				Type:     schema.TypeString,
 				Optional: true,
 			},
+			//脚本执行目标主机的ssh用户名
 			"host_username": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: true,
 			},
+			//脚本执行目标主机的ssh密码
 			"host_password": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: true,
 			},
+			//超时等待的时间
 			"sleep_interval": &schema.Schema{
 				Type:     schema.TypeInt,
 				Optional: true,
 				Default:  1200,
 			},
+			//是否显示ansible执行的结果
 			"show_result": &schema.Schema{
 				Type:     schema.TypeBool,
 				Optional: true,
 				Default:  true,
 			},
+			//ansible执行的结果
 			"result": &schema.Schema{
 				Type:     schema.TypeString,
 				Optional: true,
